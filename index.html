@@ -13,14 +13,16 @@
     .hero-icon {
       width: 96px;
       height: 96px;
-      background: var(--brand);
       border-radius: 22px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 48px;
+      display: inline-block;
       margin-bottom: 24px;
       box-shadow: 0 8px 32px rgba(91,127,238,0.3);
+      overflow: hidden;
+    }
+    .hero-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .hero h1 {
       font-size: 36px;
@@ -82,7 +84,7 @@
 
 <header class="site-header">
   <a href="index.html" class="logo">
-    <div class="logo-icon">🎧</div>
+    <div class="logo-icon"><img src="icon.png" alt="DictaFlow" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
     <span class="logo-name">DictaFlow</span>
   </a>
   <nav>
@@ -93,7 +95,7 @@
 </header>
 
 <div class="hero">
-  <div class="hero-icon">🎧</div>
+  <div class="hero-icon"><img src="icon.png" alt="DictaFlow"></div>
   <h1>DictaFlow</h1>
   <p>YouTube動画で英語ディクテーション。<br>聴いて、書いて、本物のリスニング力を身につける。</p>
   <div class="badge-row">
